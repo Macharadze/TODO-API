@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\bin\Debug\net6.0\TODO.Domain.deps.json
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\bin\Debug\net6.0\TODO.Domain.dll
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\bin\Debug\net6.0\TODO.Domain.pdb
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\obj\Debug\net6.0\TODO.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\obj\Debug\net6.0\TODO.Domain.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\obj\Debug\net6.0\TODO.Domain.AssemblyInfo.cs
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\obj\Debug\net6.0\TODO.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\obj\Debug\net6.0\TODO.Domain.dll
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\obj\Debug\net6.0\refint\TODO.Domain.dll
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\obj\Debug\net6.0\TODO.Domain.pdb
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Domain\obj\Debug\net6.0\ref\TODO.Domain.dll

@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TODO.API</name>
+    </assembly>
+    <members>
+        <member name="T:TODO.API.Controllers.LogController">
+            <summary>
+            Controller for retrieving logs related to actions performed in the application.
+            </summary>
+        </member>
+        <member name="M:TODO.API.Controllers.LogController.#ctor(TODO.Application.IAction.IActionLogInterface)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TODO.API.Controllers.LogController"/> class.
+            </summary>
+            <param name="actionLog">The service for accessing action logs.</param>
+        </member>
+        <member name="M:TODO.API.Controllers.LogController.Get(System.Threading.CancellationToken,System.String,System.String)">
+            <summary>
+            Retrieves logs based on the provided entity ID and table name.
+            </summary>
+            <param name="token">Cancellation token.</param>
+            <param name="entityID">The ID of the entity for which logs are requested.</param>
+            <param name="tableName">The name of the table associated with the entity.</param>
+            <returns>An ActionResult containing the requested logs.</returns>
+        </member>
+        <member name="T:TODO.API.Controllers.SubTaskController">
+            <summary>
+            Controller for managing subtasks.
+            </summary>
+        </member>
+        <member name="M:TODO.API.Controllers.SubTaskController.#ctor(TODO.Application.ISubTask.ISubTaskInterface)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TODO.API.Controllers.SubTaskController"/> class.
+            </summary>
+            <param name="subTaskInterface">The service for managing subtasks.</param>
+        </member>
+        <member name="M:TODO.API.Controllers.SubTaskController.AddSubtask(System.Threading.CancellationToken,TODO.Application.Subtasks.Request.SubtaskRequest)">
+            <summary>
+            Adds a new subtask.
+            </summary>
+            <param name="cancellation">Cancellation token.</param>
+            <param name="request">The subtask request containing information about the subtask to add.</param>
+            <returns>An ActionResult indicating the result of the operation.</returns>
+        </member>
+        <member name="M:TODO.API.Controllers.SubTaskController.Update(System.Threading.CancellationToken,System.String,TODO.Application.Subtasks.Request.SubtaskRequest)">
+            <summary>
+            Updates a subtask.
+            </summary>
+            <param name="cancellation">Cancellation token.</param>
+            <param name="title">The title of the todo.</param>
+            <param name="request">The subtask details to update.</param>
+            <returns>An ActionResult indicating the result of the operation.</returns>
+        </member>
+        <member name="M:TODO.API.Controllers.SubTaskController.Delete(System.Threading.CancellationToken,System.String,System.String)">
+            <summary>
+            Deletes a subtask.
+            </summary>
+            <param name="cancellation">Cancellation token.</param>
+            <param name="todoID">The ID of the parent todo.</param>
+            <param name="title">The title of the subtask to delete.</param>
+            <returns>An ActionResult indicating the result of the operation.</returns>
+        </member>
+        <member name="T:TODO.API.Controllers.ToDoController">
+            <summary>
+            Controller for managing ToDos.
+            </summary>
+        </member>
+        <member name="M:TODO.API.Controllers.ToDoController.#ctor(TODO.Application.IToDo.IToDoInterface)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TODO.API.Controllers.ToDoController"/> class.
+            </summary>
+            <param name="toDoInterface">The service for managing ToDos.</param>
+        </member>
+        <member name="M:TODO.API.Controllers.ToDoController.AddToDo(System.Threading.CancellationToken,TODO.Application.ToDos.Request.ToDoRequest)">
+            <summary>
+            Adds a new ToDo item.
+            </summary>
+            <param name="token">Cancellation token.</param>
+            <param name="request">The ToDo request containing information about the ToDo item to add.</param>
+            <returns>An ActionResult indicating the result of the operation.</returns>
+        </member>
+        <member name="M:TODO.API.Controllers.ToDoController.Get(System.Threading.CancellationToken,System.String)">
+            <summary>
+            Retrieves a ToDo item by ID.
+            </summary>
+            <param name="token">Cancellation token.</param>
+            <param name="id">The ID of the ToDo item to retrieve.</param>
+            <returns>An ActionResult containing the requested ToDo item.</returns>
+        </member>
+        <member name="M:TODO.API.Controllers.ToDoController.GetSubTasks(System.Threading.CancellationToken,System.String)">
+            <summary>
+            Retrieves subtasks of a ToDo item by ID.
+            </summary>
+            <param name="token">Cancellation token.</param>
+            <param name="id">The ID of the ToDo item.</param>
+            <returns>An ActionResult containing the subtasks of the requested ToDo item.</returns>
+        </member>
+        <member name="M:TODO.API.Controllers.ToDoController.Delete(System.Threading.CancellationToken,System.String)">
+            <summary>
+            Deletes a ToDo item.
+            </summary>
+            <remarks>
+            Requires the user to be authenticated and have the 'Customer' role.
+            </remarks>
+            <param name="token">Cancellation token.</param>
+            <param name="id">ID of the ToDo item to delete.</param>
+            <returns>
+            ActionResult with status code 200 (OK) and a message indicating successful deletion,
+            or NotFound status code with a message if the item was not found.
+            </returns>
+        </member>
+        <member name="M:TODO.API.Controllers.ToDoController.UpdateToDo(System.Threading.CancellationToken,System.String,TODO.Application.ToDos.Request.ToDoRequest)">
+            <summary>
+            Updates a ToDo item.
+            </summary>
+            <remarks>
+            Requires the user to be authenticated and have the 'Customer' role.
+            </remarks>
+            <param name="token">Cancellation token.</param>
+            <param name="id">ID of the ToDo item to update.</param>
+            <param name="request">Request containing the updated ToDo information.</param>
+            <returns>
+            ActionResult with status code 200 (OK) and a message indicating successful update,
+            or BadRequest status code with an error message if the update fails.
+            </returns>
+        </member>
+        <member name="M:TODO.API.Controllers.ToDoController.PartiallyUpdateTodo(System.String,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{TODO.Application.ToDos.Request.ToDoRequest},System.Threading.CancellationToken)">
+            <summary>
+            Partially updates a ToDo item.
+            </summary>
+            <remarks>
+            Requires the user to be authenticated and have the 'Customer' role.
+            </remarks>
+            <param name="id">ID of the ToDo item to partially update.</param>
+            <param name="patchDocument">JsonPatchDocument containing partial updates to the ToDo item.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+            <returns>
+            IActionResult with status code 200 (OK) and a message indicating successful partial update,
+            or BadRequest status code with an error message if the partial update fails.
+            </returns>
+        </member>
+        <member name="M:TODO.API.Controllers.ToDoController.MarkAsDone(System.Threading.CancellationToken,System.String)">
+            <summary>
+            Marks a ToDo item as done.
+            </summary>
+            <remarks>
+            Requires the user to be authenticated and have the 'Customer' role.
+            </remarks>
+            <param name="token">Cancellation token.</param>
+            <param name="id">ID of the ToDo item to mark as done.</param>
+            <returns>
+            ActionResult with status code 200 (OK) and a message indicating successful marking as done,
+            or BadRequest status code with an error message if the marking fails.
+            </returns>
+        </member>
+        <member name="T:TODO.API.Controllers.UserController">
+            <summary>
+            Controller for managing user-related operations.
+            </summary>
+        </member>
+        <member name="M:TODO.API.Controllers.UserController.#ctor(TODO.Application.IUser.IUserInterface)">
+            <summary>
+            Constructor for UserController.
+            </summary>
+            <param name="userInterface">An instance of IUserInterface 
+            for interacting with user-related operations.</param>
+        </member>
+        <member name="M:TODO.API.Controllers.UserController.Register(TODO.Application.Users.Request.UserLogin,System.Threading.CancellationToken)">
+            <summary>
+            Registers a new user.
+            </summary>
+            <param name="user">UserLogin object containing user credentials.</param>
+            <param name="cancellation">Cancellation token for cancelling the operation.</param>
+        </member>
+        <member name="M:TODO.API.Controllers.UserController.Login(TODO.Application.Users.Request.UserLogin,System.Threading.CancellationToken)">
+            <summary>
+            Logs in a user.
+            </summary>
+            <param name="user">UserLogin object containing user credentials.</param>
+            <param name="cancellation">Cancellation token for cancelling the operation.</param>
+        </member>
+        <member name="M:TODO.API.Controllers.UserController.GetTodos(System.Threading.CancellationToken,TODO.Domain.Enums.Status)">
+            <summary>
+            Gets all to-do items for the current user.
+            </summary>
+            <param name="token">Cancellation token for cancelling the operation.</param>
+            <param name="status">Optional status filter for filtering to-do items.</param>
+            <returns>List of ToDoRequest objects representing to-do items.</returns>
+        </member>
+        <member name="T:TODO.API.Infrastructure.Localization.Language">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:TODO.API.Infrastructure.Localization.Language.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:TODO.API.Infrastructure.Localization.Language.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:TODO.API.Infrastructure.Localization.Language.Conflict">
+            <summary>
+              Looks up a localized string similar to უკვე არსებობს.
+            </summary>
+        </member>
+        <member name="P:TODO.API.Infrastructure.Localization.Language.Create">
+            <summary>
+              Looks up a localized string similar to წარმატებით შეიქმნა.
+            </summary>
+        </member>
+        <member name="P:TODO.API.Infrastructure.Localization.Language.Delete">
+            <summary>
+              Looks up a localized string similar to წარმატებით წაიშალა.
+            </summary>
+        </member>
+        <member name="P:TODO.API.Infrastructure.Localization.Language.NotFound">
+            <summary>
+              Looks up a localized string similar to ვერ მოიძებნა.
+            </summary>
+        </member>
+        <member name="P:TODO.API.Infrastructure.Localization.Language.Update">
+            <summary>
+              Looks up a localized string similar to წარმატებით განახლდა.
+            </summary>
+        </member>
+    </members>
+</doc>

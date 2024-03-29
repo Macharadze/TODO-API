@@ -1,0 +1,86 @@
+2024-03-24 21:42:58.178 +04:00 Now listening on: https://localhost:7206
+2024-03-24 21:42:58.255 +04:00 Now listening on: http://localhost:5149
+2024-03-24 21:42:58.262 +04:00 Application started. Press Ctrl+C to shut down.
+2024-03-24 21:42:58.263 +04:00 Hosting environment: Development
+2024-03-24 21:42:58.265 +04:00 Content root path: C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.API\
+2024-03-24 21:43:18.556 +04:00 
+ Request Info 
+IP = ::1
+Address = https
+IsSescured = True
+Body = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream
+QueryString = 
+Time = 3/24/2024 9:43:18 PM
+
+ Response Info 
+StatusCode = 200
+Body = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream
+
+2024-03-24 21:43:24.234 +04:00 HTTP POST /api/v1/User/Login responded 200 in 5475.9069 ms
+2024-03-24 21:44:03.413 +04:00 
+ Request Info 
+IP = ::1
+Address = https
+IsSescured = True
+Body = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream
+QueryString = 
+Time = 3/24/2024 9:44:03 PM
+
+ Response Info 
+StatusCode = 200
+Body = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream
+
+2024-03-24 21:44:04.551 +04:00 HTTP POST /api/v1/ToDo responded 200 in 890.3966 ms
+2024-03-24 21:44:42.139 +04:00 
+ Request Info 
+IP = ::1
+Address = https
+IsSescured = True
+Body = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream
+QueryString = 
+Time = 3/24/2024 9:44:42 PM
+
+ Response Info 
+StatusCode = 200
+Body = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream
+
+2024-03-24 21:44:42.535 +04:00 HTTP PUT /api/v1/ToDo/todos/13FFC01B-BF8F-4951-B18D-C756AF5A0BED/done responded 200 in 348.3495 ms
+2024-03-24 22:01:01.132 +04:00 Now listening on: https://localhost:7206
+2024-03-24 22:01:01.169 +04:00 Now listening on: http://localhost:5149
+2024-03-24 22:01:01.173 +04:00 Application started. Press Ctrl+C to shut down.
+2024-03-24 22:01:01.173 +04:00 Hosting environment: Development
+2024-03-24 22:01:01.174 +04:00 Content root path: C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.API\
+2024-03-24 22:01:42.854 +04:00 Now listening on: https://localhost:7206
+2024-03-24 22:01:42.898 +04:00 Now listening on: http://localhost:5149
+2024-03-24 22:01:42.901 +04:00 Application started. Press Ctrl+C to shut down.
+2024-03-24 22:01:42.902 +04:00 Hosting environment: Development
+2024-03-24 22:01:42.902 +04:00 Content root path: C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.API\
+2024-03-24 22:02:13.291 +04:00 Now listening on: https://localhost:7206
+2024-03-24 22:02:13.344 +04:00 Now listening on: http://localhost:5149
+2024-03-24 22:02:13.348 +04:00 Application started. Press Ctrl+C to shut down.
+2024-03-24 22:02:13.348 +04:00 Hosting environment: Development
+2024-03-24 22:02:13.349 +04:00 Content root path: C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.API\
+2024-03-24 22:02:35.572 +04:00 Now listening on: https://localhost:7206
+2024-03-24 22:02:35.612 +04:00 Now listening on: http://localhost:5149
+2024-03-24 22:02:35.616 +04:00 Application started. Press Ctrl+C to shut down.
+2024-03-24 22:02:35.616 +04:00 Hosting environment: Development
+2024-03-24 22:02:35.617 +04:00 Content root path: C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.API\
+2024-03-24 22:04:56.677 +04:00 Now listening on: https://localhost:7206
+2024-03-24 22:04:56.731 +04:00 Now listening on: http://localhost:5149
+2024-03-24 22:04:56.735 +04:00 Application started. Press Ctrl+C to shut down.
+2024-03-24 22:04:56.735 +04:00 Hosting environment: Development
+2024-03-24 22:04:56.736 +04:00 Content root path: C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.API\
+2024-03-24 22:05:05.340 +04:00 
+ Request Info 
+IP = ::1
+Address = https
+IsSescured = True
+Body = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream
+QueryString = 
+Time = 3/24/2024 10:05:05 PM
+
+ Response Info 
+StatusCode = 200
+Body = Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream
+
+2024-03-24 22:05:08.342 +04:00 HTTP POST /api/v1/User/Login responded 200 in 2910.2895 ms

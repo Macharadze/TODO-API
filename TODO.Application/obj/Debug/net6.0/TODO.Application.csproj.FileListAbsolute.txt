@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\bin\Debug\net6.0\TODO.Application.deps.json
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\bin\Debug\net6.0\TODO.Application.dll
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\bin\Debug\net6.0\TODO.Application.pdb
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\TODO.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\TODO.Application.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\TODO.Application.AssemblyInfo.cs
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\TODO.Application.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\TODO.Application.dll
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\refint\TODO.Application.dll
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\TODO.Application.pdb
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\ref\TODO.Application.dll
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\bin\Debug\net6.0\TODO.Domain.dll
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\bin\Debug\net6.0\TODO.Domain.pdb
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\TODO.Application.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\GiorgiMatcharadze\TO-DO API\TODO Application\TODO.Application\obj\Debug\net6.0\TODO.Application.csproj.CopyComplete
